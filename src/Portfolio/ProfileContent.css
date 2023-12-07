@@ -1,0 +1,27 @@
+.underline-look {
+  position: relative;
+}
+.underline-look:hover::after {
+  animation: slideover 0.5s linear forwards;
+}
+.underline-look::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  content: "";
+  border-bottom: 1px solid black;
+}
+
+@keyframes slideover {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}/*# sourceMappingURL=ProfileContent.css.map */

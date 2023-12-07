@@ -1,0 +1,44 @@
+.card-item {
+   
+  & .addToCart {
+    display: none;
+  }
+
+  &:hover .addToCart {
+    display: block;
+   animation: slideup 0.2s ease-in-out forwards;
+  }
+}
+
+@keyframes slideup {
+    0% {
+     
+        transform: translateY(0.5rem);
+       
+    }
+    20% {
+      
+        transform: translateY(0.4rem);
+        
+    }
+    40% {
+       
+        transform: translateY(0.3rem);
+       
+    }
+    60% {
+      
+        transform: translateY(0.2rem);
+        
+    }
+    80% {
+      
+        transform: translateY(0.1rem);
+        
+    }
+    100% {
+    
+        transform: none;
+     
+    }
+}
